@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: hsl(233, 47%, 7%);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  height: 100%;
+}
+
+body {
+  background-color: hsl(244, 38%, 16%);
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  border-radius: 0.5em;
+  justify-content: space-between;
+}
+
+.text-content {
+  width: 40%;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin: 4em 1em 4em 4em;
+}
+
+.header {
+  color: hsl(0, 0%, 100%);
+  font-family: Inter, sans-serif;
+  margin-bottom: 1em;
+}
+
+.insights {
+  color: hsl(277, 64%, 61%);
+}
+
+.text {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 2em;
+  font-family: Lexend Deca;
+}
+
+.image {
+  width: 50%;
+  height: 100%;
+  background-color: hsl(277, 64%, 61%);
+  background-image: url("../images/image-header-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+@media only screen and (max-width: 400px) {
+  :root {
+    font-size: 10px;
+  }
+  body {
+    flex-direction: column-reverse;
+  }
+  .text-content {
+    margin: 0;
+    padding: 2em;
+    height: 50%;
+    width: 100%;
+  }
+  .image {
+    height: 50%;
+    width: 100%;
+    border-radius: 0.5rem 0.5em 0 0;
+  }
+}
